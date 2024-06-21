@@ -1,161 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles/pp.css">
-    <script src="https://kit.fontawesome.com/417a53c565.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Feven.png" class="logo">   
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu(0)"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1> Hi, I'm Feven</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="styles/pp.css">
+        <link rel="stylesheet" href="styles/mediaq.css">
+        <script src="https://kit.fontawesome.com/417a53c565.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+        <div class="logo">Feven</div>
+        <div>
+            <ul class="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        <nav id="hamburger-nav">
+        <div class="logo">Feven</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#header" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
-    </div>
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="20.jpg">
+        </nav>
+        <section id="profile">
+            <div class="pic-container">
+                <img src="./styles/.jpg" alt="PP">      
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hi, I'm</p>
+                <h1 class="title">Feven Esayas</h1>
+                <p class="section_text_p2">Frontend Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('Example.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1> 
-                    <p>
-                        Highly motivated and eager software engineering student at Adama Science and Technology University with a passion for development. Seeking opportunities to apply my knowledge and skills in a professional setting. Despite limited work experience, I have actively engaged in project-based learning, collaborating with peers to develop innovative solutions.
-                    </p> 
+                <div id="socials">
+                    <i class="fa-brands fa-instagram" onclick="location.href='https://instagram.com/'"></i>
+                    <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com'"></i>
+                    <i class="fa-brands fa-github" onclick="location.href='https://github.com/Fevenes'"></i>
+                </div>
+           </div>
+       </section>
+       <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="text-container">
+                        <p> Highly motivated and eager software engineering student at
+                            Adama Science and Technology University with a passion for
+                            development and problem-solving. Seeking opportunities to apply my knowledge and
+                            skills in a professional setting. Despite limited work experience, I have actively engaged in project-based learning, collaborating
+                            with peers to develop innovative solutions.<br/>
+                            Proficient in various programming languages and software tools. Strong analytical and problem-solving abilities. Committed to
+                            continuous learning and staying abreast of industry trends.
+                        </p>
+                    </div>
+                
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./styles/education.png" alt="Education icon" class="icons">
+                            <h3>Education</h3>
+                            <p>Software Engineering Under graduate Student at ASTU<br />HighSchool at Makko Billi</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./styles/creative-thinking.png" alt="Education icon" class="iconss">
+                            <h3>Skills</h3>
+                            <p>Html Css JS <br>React NodeJs MySql <br>Python C++ Java</p>
+                        </div>
+                    </div>
+                </div>    
+                
+            </div>
+            <img src="./styles/pngwing.com.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='./#about'">
+       </section>
+       <section id="projects">
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My Projects</h1>
+                    <div class="projects-list">
+                        <div class="projects">
+                            <img src="YTT.jpeg">
+                            <div class="layer">
+                                <h3>Youtube Thumbnail</h3>
+                                <p>Youtube Thumbnail </br> by using only html and css.</p>
+                                <a href="#" onclick="location.href='https://github.com/Fevenes'"><i class="fa-solid fa-up-right-from-square"></i></a>
+                           </div>
+                        </div>
+                        <div class="projects">
+                            <img src="AMA.jpeg">
+                            <div class="layer">
+                                <h3>Amazon</h3>
+                                <p>Amazon Cart used to order and store.</p>
+                                <a href="#" onclick="location.href='https://github.com/Fevenes'"><i class="fa-solid fa-up-right-from-square"></i></a>
+                           </div>
+                      </div>
+                      <div class="projects">
+                            <img src="Port1.jpeg">
+                            <div class="layer">
+                                <h3>My Portfolio</h3>
+                                <p>My personal portfolio</br> by using html,css and javascript.</p>
+                                <a href="#" onclick="location.href='https://github.com/Fevenes'"><i class="fa-solid fa-up-right-from-square"></i></a>
+                          </div>
+                      </div>
+                      <div class="projects">
+                            <img src="styles/images.png">
+                            <div class="layer">
+                                <h3>Mobile App</h3>
+                                <p>Music player app by using flutter.</p>
+                                <a href="#" onclick="location.href='https://github.com/Fevenes'"><i class="fa-solid fa-up-right-from-square"></i></a>
+                           </div>
+                       </div>
+                   </div>    
+              </div>
+            </div>
+            <img src="./styles/pngwing.com.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='./#projectss'">
+        </section>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Web Development</span><br> Web Development</li>
-                            <li><span>Programming Languages</span><br>Like Java,Python and C++</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><p>I don't have Experience</p></li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022/23-Present</span><br> Software Engineering</li>
-                            <li><span>2023-Present</span><br>Web Development</li>
-                        </ul>
-                    </div>
+        <section id="contact">
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container"></br>
+                <div class="contact-info-container">
+                    <p><i class="fa-solid fa-paper-plane"></i> fevaesa82@gmail.com</p>
+                </div>
+                <div class="contact-info-container">
+                    <p><i class="fa-solid fa-phone"></i> 0933664170</br></p> 
+                </div>
+                <div class="contact-info-container">
+                    <p><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i> Linkedin </a></p> 
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2> Web Development</h2>
-                    <p>Web Development using languages.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-python"></i>
-                    <h2>Software Development</h2>
-                    <p>Develop Softwares using languages. </p>
-                    <a href="https://github.com/Fevenes">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Development</h2>
-                    <p>App Development <br>Using Flutter.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-   <!------------portfolio-------> 
-  <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="projects-list">
-            <div class="projects">
-                <img src="YTT.jpeg">
-                <div class="layer">
-                    <h3>Youtube Thumbnail</h3>
-                    <p>Youtube Thumbnail by using only html and css.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="projects">
-                <img src="AMA.jpeg">
-                <div class="layer">
-                    <h3>Amazon</h3>
-                    <p>Amazon Cart use for store and order anything.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="projects">
-                <img src="Port1.jpeg">
-                <div class="layer">
-                    <h3>My Portfolio</h3>
-                    <p>My personal portfolio by using html,css and javascript.</p>
-                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
-
-    </div>
-  </div>
-  <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> fevaesa82@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 0933664170</p>
-                <div class="social-icons">
-                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                </div>
-                <a href="Example.docx" download class="btn btn2"> Download CV </a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>    
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p> Copyright &#169; 2024 Feven E. All Rights Reserved. </p>
-    </div>
-
-  </div>
- <script src="PP.js"></script>
+        </section>
+        
+        
+      <script src="script/PP.js"></script>
     
-    
-</body>
+    </body>
 </html>
