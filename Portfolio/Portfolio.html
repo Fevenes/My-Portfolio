@@ -38,7 +38,7 @@
         </nav>
         <section id="profile">
             <div class="pic-container">
-                <img src="./styles/.jpg" alt="PP">      
+                <img src="styles/20.jpg" alt="PP">      
             </div>
             <div class="section_text">
                 <p class="section_text_p1">Hi, I'm</p>
@@ -46,7 +46,7 @@
                 <p class="section_text_p2">Frontend Developer</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2" onclick="window.open('Example.pdf')">Download CV</button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
                 </div>
                 <div id="socials">
                     <i class="fa-brands fa-instagram" onclick="location.href='https://instagram.com/'"></i>
@@ -73,12 +73,12 @@
                 
                     <div class="about-containers">
                         <div class="details-container">
-                            <img src="./styles/education.png" alt="Education icon" class="icons">
+                            <img src="styles/education.png" alt="Education icon" class="icons">
                             <h3>Education</h3>
                             <p>Software Engineering Under graduate Student at ASTU<br />HighSchool at Makko Billi</p>
                         </div>
                         <div class="details-container">
-                            <img src="./styles/creative-thinking.png" alt="Education icon" class="iconss">
+                            <img src="styles/creative-thinking.png" alt="Education icon" class="iconss">
                             <h3>Skills</h3>
                             <p>Html Css JS <br>React NodeJs MySql <br>Python C++ Java</p>
                         </div>
@@ -86,7 +86,7 @@
                 </div>    
                 
             </div>
-            <img src="./styles/pngwing.com.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='./#about'">
+            <img src="styles/pngwing.com.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='#projects'">
        </section>
        <section id="projects">
             <div id="portfolio">
@@ -94,7 +94,7 @@
                     <h1 class="sub-title">My Projects</h1>
                     <div class="projects-list">
                         <div class="projects">
-                            <img src="YTT.jpeg">
+                            <img src="styles/YTT.jpeg">
                             <div class="layer">
                                 <h3>Youtube Thumbnail</h3>
                                 <p>Youtube Thumbnail </br> by using only html and css.</p>
@@ -102,7 +102,7 @@
                            </div>
                         </div>
                         <div class="projects">
-                            <img src="AMA.jpeg">
+                            <img src="styles/AMA.jpeg">
                             <div class="layer">
                                 <h3>Amazon</h3>
                                 <p>Amazon Cart used to order and store.</p>
@@ -110,7 +110,7 @@
                            </div>
                       </div>
                       <div class="projects">
-                            <img src="Port1.jpeg">
+                            <img src="styles/Port1.jpeg">
                             <div class="layer">
                                 <h3>My Portfolio</h3>
                                 <p>My personal portfolio</br> by using html,css and javascript.</p>
@@ -128,7 +128,7 @@
                    </div>    
               </div>
             </div>
-            <img src="./styles/pngwing.com.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='./#projectss'">
+            <img src="styles/pngwing.com.png" alt="Arrow icon" class="icon-arrow" onclick="location.href='#contact'">
         </section>
 
         <section id="contact">
@@ -136,16 +136,37 @@
             <h1 class="title">Contact Me</h1>
             <div class="contact-info-upper-container"></br>
                 <div class="contact-info-container">
-                    <p><i class="fa-solid fa-paper-plane"></i> fevaesa82@gmail.com</p>
+                    <p><i class="fa-solid fa-paper-plane"></i> fevaesa82@gmail.com<br></p>
                 </div>
                 <div class="contact-info-container">
-                    <p><i class="fa-solid fa-phone"></i> 0933664170</br></p> 
+                    <p><i class="fa-solid fa-phone"></i> 0933664170</p> 
                 </div>
                 <div class="contact-info-container">
                     <p><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i> Linkedin </a></p> 
                 </div>
             </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button1">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
         </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
         
         
       <script src="script/PP.js"></script>
